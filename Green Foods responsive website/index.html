@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="active" id="navbar">
+        <a href="#" class="logo">Good <span>Foods</span></a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="menuToggle();"></span>
+      </header>
+      <div class="content">
+        <div class="bannerText" id="slideshowText">
+          <div class="active">
+            <h2>
+              EAT Healthy <br />
+              Stay Healthy
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+              eveniet officiis, consequuntur placeat quia tempora tempore ab
+              deserunt architecto maxime id asperiores necessitatibus cupiditate
+              maiores facilis! Pariatur?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>
+              EAT Your<br />
+              Veggies
+            </h2>
+            <p>
+              Ut enim ad sit amet consectetur adipisicing elit. Amet eveniet
+              officiis, consequuntur placeat quia tempora tempore ab deserunt
+              architecto maxime id asperiores necessitatibus cupiditate maiores
+              facilis! Pariatur?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>
+              Good Food<br />
+              Good Mood
+            </h2>
+            <p>
+              Duis aute irure dolor in sit amet consectetur adipisicing elit.
+              Amet eveniet officiis, consequuntur placeat quia tempora tempore
+              ab deserunt architecto maxime id asperiores necessitatibus
+              cupiditate maiores facilis! Pariatur?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="bannerImg" id="slideshow">
+          <img
+            src="./Assests/pexels-markus-winkler-1430818-2862154.jpg"
+            class="active"
+          />
+          <img src="./Assests/pexels-bulbfish-1143754.jpg" />
+          <img src="./Assests/pexels-pixabay-434258.jpg" />
+        </div>
+      </div>
+      <div class="icons">
+        <ul class="sci">
+          <li>
+            <a href="#"><img src="./Assests/facebook-logo.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./Assests/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./Assests/instagram.png" /></a>
+          </li>
+        </ul>
+        <ul class="controls">
+          <li>
+            <a href="#"
+              ><img
+                src="./Assests/left-arrow.png"
+                onclick="prevSlide();prevSlideText();"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./Assests/right-arrow.png"
+                onclick="nextSlide();nextSlideText()"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
